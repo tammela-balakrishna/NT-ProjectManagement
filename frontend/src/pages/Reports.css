@@ -1,0 +1,109 @@
+/* General Container */
+.reports-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e293b;
+    background-color: #f9fafb;
+  }
+  
+  /* Title */
+  .page-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  
+  /* Summary Cards */
+  .report-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-width: 240px;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h2 {
+    font-size: 1.2rem;
+    color: #475569;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2563eb;
+  }
+  
+  /* Report Table */
+  .report-table {
+    overflow-x: auto;
+  }
+  
+  .report-table h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0f172a;
+  }
+  
+  .report-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .report-table th,
+  .report-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .report-table th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+    color: #334155;
+  }
+  
+  .report-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .report-summary {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .page-title {
+      font-size: 1.8rem;
+    }
+  
+    .report-table table,
+    .report-table th,
+    .report-table td {
+      font-size: 0.95rem;
+    }
+  }
+  

@@ -1,0 +1,51 @@
+.clients-page {
+    padding: 20px;
+    background-color: #f3f4f6;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .clients-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    color:black
+  }
+  
+  .clients-header p {
+    color: #6b7280;
+    margin-bottom: 1rem;
+    color: black;
+  }
+  
+  .clients-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .clients-table th,
+  .clients-table td {
+    padding: 12px 16px;
+    text-align: left;
+    color: black;
+  }
+  
+  .clients-table thead {
+    background-color: #f9fafb;
+    font-weight: bold;
+  }
+  
+  .status.active {
+    color: green;
+  }
+  
+  .status.pending {
+    color: orange;
+  }
+  
+  .status.inactive {
+    color: red;
+  }
+  
